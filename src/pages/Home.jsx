@@ -1,4 +1,7 @@
 import { FaPlay } from "react-icons/fa";
+import intersectImage from "../assets/Intersect (1).png";
+import maskGroupImage from "../assets/Mask group.png";
+import maskGroup1Image from "../assets/Mask group (1).png";
 
 import React from 'react';
 
@@ -35,7 +38,7 @@ const Home = () => {
        <div className="relative mt-12 md:mt-9">
         <div className="bg-green-500 rounded-full w-80 h-80 md:w-[400px] md:h-[400px] flex items-center justify-center">
           <img
-            src="../../public/images/Intersect (1).png"
+            src={intersectImage}
             alt="Food Girl"
             className="rounded-xl w-72 md:w-80 object-cover"
           />
@@ -53,7 +56,7 @@ const Home = () => {
              <div className="flex justify-center gap-4 absolute -bottom-6 left-1/8 -translate-x-1/2">
           <div className="flex items-center gap-2 bg-white rounded-3xl shadow-md px-5 py-2 w-64">
             <img
-              src="../../public/images/Mask group.png"
+              src={maskGroupImage}
               alt="Spicy Noodles"
               className="rounded-2xl w-20 h-20"
             />
@@ -64,7 +67,7 @@ const Home = () => {
           </div>
           <div className="flex items-center gap-2 bg-white rounded-3xl shadow-md px-3 py-2 w-64">
             <img
-              src="../../public/images/Mask group (1).png"
+              src={maskGroup1Image}
               alt="Vegetarian Salad"
               className="rounded-2xl w-20 h-20"
             />

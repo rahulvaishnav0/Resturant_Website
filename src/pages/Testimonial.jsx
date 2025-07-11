@@ -1,12 +1,16 @@
 import React from 'react';
-import { FaStar } from 'react-icons/fa';
+import { FaStar } from "react-icons/fa";
+import chefImage from "../assets/pngwing 2.png";
+import user1Image from "../assets/Mask group (3).png";
+import user2Image from "../assets/Mask group (4).png";
+import user3Image from "../assets/Mask group (5).png";
 
 export default function Testimonial() {
   return (
     <section className="bg-white py-12 px-4 md:px-8 lg:px-16 grid md:grid-cols-2 items-center gap-10">
       {/* Left: Chef image */}
       <div className="text-center md:text-left">
-        <img src="/public/images/pngwing 2.png" alt="Chef" className="mx-auto md:mx-0 w-72" />
+        <img src={chefImage} alt="Chef" className="mx-auto md:mx-0 w-72" />
         <h2 className="text-2xl font-bold mt-4 text-orange-500 flex items-center justify-center md:justify-start gap-2">
           Our Best Chef <span>😊</span>
         </h2>
@@ -25,9 +29,9 @@ export default function Testimonial() {
         </p>
         
         <div className="flex mt-4">
-          <img src="/public/images/Mask group (3).png" alt="user1" className="w-10 h-10 rounded-full border-2 border-white -ml-0" />
-          <img src="/public/images/Mask group (4).png" alt="user2" className="w-10 h-10 rounded-full border-2 border-white -ml-4" />
-          <img src="/public/images/Mask group (5).png" alt="user3" className="w-10 h-10 rounded-full border-2 border-white -ml-4" /> 
+          <img src={user1Image} alt="user1" className="w-10 h-10 rounded-full border-2 border-white -ml-0" />
+          <img src={user2Image} alt="user2" className="w-10 h-10 rounded-full border-2 border-white -ml-4" />
+          <img src={user3Image} alt="user3" className="w-10 h-10 rounded-full border-2 border-white -ml-4" /> 
           <div className="flex items-center gap-2 text-yellow-500 mb-2">
           {Array(5).fill().map((_, i) => (
             <FaStar key={i} />

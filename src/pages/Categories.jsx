@@ -1,10 +1,14 @@
 import React from 'react';
+import dessertImage from '../assets/dessert.png';
+import burgerImage from '../assets/burger.png';
+import juiceImage from '../assets/juice.png';
+import sandwichImage from '../assets/sandwich.png';
 
 const categories = [
-  { title: 'Main Dish', count: 86, image: '/public/images/dessert.png' },
-  { title: 'Break Fast', count: 12, image: '/public/images/burger.png' },
-  { title: 'Dessert', count: 48, image: '/public/images/juice.png' },
-  { title: 'Browse All', count: 255, image: '/public/images/sandwich.png' }
+  { title: 'Main Dish', count: 86, image: dessertImage },
+  { title: 'Break Fast', count: 12, image: burgerImage },
+  { title: 'Dessert', count: 48, image: juiceImage },
+  { title: 'Browse All', count: 255, image: sandwichImage }
 ];
 
 export default function Categories() {
